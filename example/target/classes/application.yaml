@@ -5,27 +5,9 @@
 server:
   profiles: development
 spring:
-  spring:
-    datasource:
-      driver-class-name: org.h2.Driver
-      url: jdbc:h2:mem:localhost;DB_CLOSE_ON_EXIT=FALSE
-      username: admin
-      password:
-  mail:
-    host: smtp.gmail.com
-    port: 587
-    username: xyz
-    password: xyz
-    properties.mail.smtp:
-      starttls:
-        enable: true
-        required: true
-      auth: true
-      connectiontimeout: 5000
-      writetimeout: 5000
-datasource:
-  ds_dvdrental:
-      url: jdbc:postgresql://localhost:5432/etrack?createDatabaseIfNotExist=true&autoReconnect=true
+  datasource:
+    dsdvdrental:
+      jdbcUrl: jdbc:postgresql://localhost:5432/dvdrental?autoReconnect=true
       driverClassName: org.postgresql.Driver
       dialect: org.hibernate.dialect.PostgreSQLDialect
       username: postgres
