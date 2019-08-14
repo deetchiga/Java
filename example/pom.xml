@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.guides.springboot2</groupId>
-    <artifactId>springboot2-jpa-crud-example</artifactId>
+    <artifactId>example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>springboot2-jpa-crud-example</name>
+    <name>example</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -55,7 +55,15 @@
             <version>3.23.1-GA</version>
         </dependency>
 
-
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>5.1.6.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
