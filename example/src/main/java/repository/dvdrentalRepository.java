@@ -1,23 +1,11 @@
+package repository;
 
-package net.guides.springboot2.springboot2jpacrudexample.repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
-import net.guides.springboot2.springboot2jpacrudexample.model.Department;
-
-import java.util.List;
-
 
 @Repository
-public interface DepartmentRepository extends JpaRepository<Department, Long> {
+public interface dvdrentalRepository  {
 
-
-    Department findByIdAndDeptname(Long id, String Deptname);
-    Department findByIdOrDeptname(Long id,String Deptname);
-
-
-
+    String display1 = "select a.actor_id,a.first_name||''||a.last_name as full_name,b.film_id \n" +
+            "from actor a\n" +
+            "join film_actor b on a.actor_id = b.actor_id\n" ;
 }
